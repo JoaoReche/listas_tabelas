@@ -1,36 +1,78 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="estilos/layout.css">
-    <title>Site Layout Grid</title>
+    <link rel="short icon" href="../imagens/favicon.ico">
+    <title>Listas e Tabelas - HTML 5</title>
 </head>
-
 <body>
-    <main class="principal">
-        <header>
-            <p>Header</p>
-        </header>
+    <header>
+        <img src="../imagens/logoListasTabelas.jpg" width="20%">
+        <h1>HTML 5: Listas e Tabelas</h1>
+    </header>
+    <hr width="80%">
+    <nav>
+        <center> Menu </center>
+    </nav>
+    <hr width="80%">
+    <main> <!--Parte principal da página-->
+        <h1>Listas em HTML 5</h1>
+        <h3>Listas Ordenadas</h3>
+        <ol type="A"> <!--type: a/A -> colocar a lista com letras, i/I -> colocar a lista com números romanos, sem o type fica em números padrão-->
+            <li>HTML 5</li>
+            <li>CSS 3</li>
+            <li>JavaScript</li>
+        </ol>
+        <h3>Listas Desordenadas</h3>
+        <ul>
+            <li>HTML 5</li>
+            <li>CSS 3</li>
+            <li>JavaScript</li>
+        </ul>
+        <h3>Listas de Definição</h3>
+        <dl>
+            <dt>HTML</dt>
+                <dd>Introdução</dd>
+            <dt>CSS</dt>
+                <dd>Estilos Básicos</dd>
+        </dl>
         <section>
-            <p>Conteúdo Principal</p>
+            <h1>Tabelas em HTML 5</h1>
+            <table border="1">
+                <caption>Tipos de Linguagens Web</caption> <!--Título para a tabela-->
+                <thead>
+                    <tr bgcolor="orange">
+                        <td>Tipos de Linguagens:</td>
+                        <td>Descrição:</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>HTML</td>
+                        <td>Linguagem de Marcação de Hipertexto, utilizada para inserir conteúdos na página.</td>
+                    </tr>
+                    <tr>
+                        <td>CSS</td>
+                        <td>Linguagem utilizada para estilização das páginas HTML.</td>
+                    </tr>
+                    <tr>
+                        <td>JavaScript</td>
+                        <td>Linguagem de Programação, utilizada para validar os formulários.</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="2">Desenvolvimento Web</td> <!--colspan indica quantas células o texto vai ocupar-->
+                    </tr>
+                </tfoot>
+            </table>
         </section>
-        <aside>
-            <p>Barra Lateral</p>
-        </aside>
-        <footer>
-            <section class="fparte1">
-                <p>Seção 1</p>
-            </section>
-            <section class="fparte2">
-                <p>Seção 2</p>
-            </section>
-            <section class="fparte3">
-                <p>Seção 3</p>
-            </section>
-        </footer>
     </main>
+    <hr>
+    <footer>
+        Rodapé
+    </footer>
+    
 </body>
-
 </html>
